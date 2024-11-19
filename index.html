@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Media Gallery</title>
+  <link rel="stylesheet" href="../gallery/stylesheet.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Media Gallery</h1>
+  </header>
+  <main>
+    <section class="gallery-section">
+      <h2>Image Gallery</h2>
+      <div id="image-gallery" class="gallery image-gallery">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image 1">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image 2">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image 3">
+      </div>
+      <button id="load-more-images" class="load-more">More Images</button>
+    </section>
+    <section class="gallery-section">
+      <h2>Video Gallery</h2>
+      <div id="video-gallery" class="gallery video-gallery">
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls disablePictureInPicture controlsList="nodownload"></video>
+        <video src="https://www.w3schools.com/html/movie.mp4" controls disablePictureInPicture controlsList="nodownload"></video>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls disablePictureInPicture controlsList="nodownload"></video>
+      </div>
+      <button id="load-more-videos" class="load-more">More Videos</button>
+    </section>
+  </main>
+  <footer>
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <p>If you wish to download any content, please contact the author:</p>
+      <p>Email: <a href="mailto:author@example.com">author@example.com</a></p>
+      <p>Phone: +123-456-7890</p>
+    </section>
+    <p>© 2024 Interactive Media Gallery</p>
+  </footer>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-img" src="" alt="Modal Image">
+      <video id="modal-video" controls playsinline disablePictureInPicture controlsList="nodownload"></video>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>
+
+
+
+

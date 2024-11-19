@@ -1,0 +1,135 @@
+/* General styles */
+•	{
+  Margin: 0;
+  Padding: 0;
+  Box-sizing: border-box;
+}
+
+Body {
+  Font-family: Arial, sans-serif;
+  Background-color: #f4f4f4;
+  Color: #333;
+}
+
+Header {
+  Text-align: center;
+  Padding: 20px;
+  Background-color: #007BFF;
+  Color: white;
+}
+
+Header h1 {
+  Font-size: 2rem;
+}
+
+.gallery-section {
+  Margin: 20px;
+  Text-align: center;
+}
+
+.gallery-section h2 {
+  Margin-bottom: 10px;
+  Font-size: 1.5rem;
+}
+
+.gallery {
+  Display: flex;
+  Flex-wrap: wrap;
+  Gap: 10px;
+  Justify-content: center;
+}
+
+.gallery img,
+.gallery video {
+  Width: 300px;
+  Height: auto;
+  Cursor: pointer;
+  Border: 2px solid #ddd;
+  Border-radius: 8px;
+  Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+Video::-webkit-media-controls {
+  Display: none !important; /* Hides all custom controls */
+}
+
+.load-more {
+  Margin-top: 15px;
+  Padding: 10px 20px;
+  Background-color: #007BFF;
+  Color: white;
+  Border: none;
+  Border-radius: 5px;
+  Cursor: pointer;
+  Font-size: 1rem;
+}
+
+.load-more:hover {
+  Background-color: #0056b3;
+}
+
+/* Contact section */
+.contact-section {
+  Text-align: center;
+  Margin: 20px;
+  Padding: 20px;
+  Background-color: #f8f8f8;
+  Border-top: 2px solid #ddd;
+}
+
+.contact-section h2 {
+  Font-size: 1.5rem;
+  Margin-bottom: 10px;
+}
+
+.contact-section a {
+  Color: #007BFF;
+  Text-decoration: none;
+}
+
+.contact-section a:hover {
+  Text-decoration: underline;
+}
+
+/* Modal styles */
+.modal {
+  Position: fixed;
+  Top: 0;
+  Left: 0;
+  Width: 100%;
+  Height: 100%;
+  Background: rgba(0, 0, 0, 0.8);
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  Display: none;
+}
+
+.modal-content {
+  Position: relative;
+  Background: #fff;
+  Padding: 20px;
+  Border-radius: 10px;
+  Text-align: center;
+}
+
+.modal-content img,
+.modal-content video {
+  Max-width: 90%;
+  Max-height: 80vh;
+}
+
+.close {
+  Position: absolute;
+  Top: 10px;
+  Right: 10px;
+  Font-size: 1.5rem;
+  Cursor: pointer;
+  Color: #333;
+}
+
+
+
